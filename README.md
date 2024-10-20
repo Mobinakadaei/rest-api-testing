@@ -1,12 +1,10 @@
-## About The Project
-
 ## API Testing Overview
 
 In this section, I describe the testing process for the API, which accepts two parameters: animal_type and amount.
-  ```sh
-* Animal Types: The API supports four specific animal types: cat, dog, horse, and snail. The API provides specific responses only for these animals.
-* Amount Field: The amount parameter has a maximum limit of 500.
-  ```
+
+  * Animal Types: The API supports four specific animal types: cat, dog, horse, and snail. The API provides specific responses only for these animals.
+  * Amount Field: The amount parameter has a maximum limit of 500.
+
 
 ## Testing Approach
 
@@ -24,12 +22,12 @@ In this section, I describe the testing process for the API, which accepts two p
 4. Amount Parameter Testing:
 
   * For the amount field, I tested the following boundary values:
-    ```sh
-    0 (minimum)
-    1 (a normal value)
-    500 (maximum limit)
-    504 (exceeding the maximum limit)
-    ```
+
+     0 (minimum)
+     1 (a normal value)
+     500 (maximum limit)
+     504 (exceeding the maximum limit)
+
   * Additionally, I included a normal value, such as 5, to verify the API’s correctness under standard conditions.
 
 Through these tests, I aimed to ensure that the API handles both valid and invalid inputs correctly and adheres to the specified parameter constraints.
