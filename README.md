@@ -40,7 +40,7 @@ Below are the specific test cases I executed for REST API testing:
 Testcase No1:
 
 | Step | Expected Result |
-|:-----------: |:--------------:|
+|:-----------:|--------------|
 | Send an API request with the animal_type parameter set to "cat" and the amount parameter set to a random value, such as "2" | Response status code must be equal to 200 |
 
 
