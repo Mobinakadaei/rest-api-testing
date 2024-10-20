@@ -52,7 +52,7 @@ def test_animal_type_is_snail(animal_type="snail"):
         assert item['type'] == animal_type, f"Expected type '{animal_type}', but got '{item['type']}'"
 
 
-def test_animal_type_is_horse(animal_type="snail"):
+def test_animal_type_is_horse(animal_type="horse"):
     response = get_animal_facts(animal_type=animal_type).json()
     for item in response:
         assert item['type'] == animal_type, f"Expected type '{animal_type}', but got '{item['type']}'"
