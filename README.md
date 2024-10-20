@@ -38,10 +38,11 @@ Through these tests, I aimed to ensure that the API handles both valid and inval
 Below are the specific test cases I executed for REST API testing:
 
 Testcase No1:
+
 | Step | Expected Result |
 |:-----------: |:--------------:|
 | Send an API request with the animal_type parameter set to "cat" and the amount parameter set to a random value, such as "2" | Response status code must be equal to 200 |
-|:----------- |:-------------- |
+
 
 Testcase No2:
 | Step | Expected Result |
