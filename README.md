@@ -9,6 +9,7 @@ In this section, I describe the testing process for the API, which accepts two p
 ## Testing Approach
 
 1. Initial Tests:
+
   * I began by running test cases without sending any parameters and by sending parameters with null values to observe the API's behavior in these scenarios.
 
 2. Invalid Animal Type:
@@ -23,10 +24,10 @@ In this section, I describe the testing process for the API, which accepts two p
 
   * For the amount field, I tested the following boundary values:
 
-     0 (minimum)
-     1 (a normal value)
-     500 (maximum limit)
-     504 (exceeding the maximum limit)
+     * 0 (minimum)
+     * 1 (a normal value)
+     * 500 (maximum limit)
+     * 504 (exceeding the maximum limit)
 
   * Additionally, I included a normal value, such as 5, to verify the API’s correctness under standard conditions.
 
