@@ -1,4 +1,41 @@
-The following test cases outline the scenarios for testing the REST API:
+## About The Project
+
+##API Testing Overview
+In this section, I describe the testing process for the API, which accepts two parameters: animal_type and amount.
+  ```sh
+* Animal Types: The API supports four specific animal types: cat, dog, horse, and snail. The API provides specific responses only for these animals.
+* Amount Field: The amount parameter has a maximum limit of 500.
+  ```
+
+##Testing Approach
+
+1. Initial Tests:
+*I began by running test cases without sending any parameters and by sending parameters with null values to observe the API's behavior in these scenarios.
+
+2. Invalid Animal Type:
+
+* Next, I tested the API by sending an animal type that is not included in the list, such as "Lion", to evaluate how the API handles unexpected input.
+
+3. Valid Animal Types:
+
+* I then sent requests for each of the listed animals to ensure the API returns the correct responses.
+
+4. Amount Parameter Testing:
+
+* For the amount field, I tested the following boundary values:
+  ```sh
+0 (minimum)
+1 (a normal value)
+500 (maximum limit)
+504 (exceeding the maximum limit)
+  ```
+* Additionally, I included a normal value, such as 5, to verify the API’s correctness under standard conditions.
+
+Through these tests, I aimed to ensure that the API handles both valid and invalid inputs correctly and adheres to the specified parameter constraints.
+
+## Test Cases
+
+Below are the specific test cases I executed for REST API testing:
 
 Testcase No1:
 | Step | Expected Result |
@@ -43,7 +80,7 @@ Testcase No8:
 Testcase No9:
 | Step | Expected Result |
 |:-----------: |:--------------:|
-| Send API without including the animal_type and amount parameters| The value of type in response must be equal to "cat" and the length of response must be equal to 1|
+| Send an API request without including the animal_type and amount parameters| The value of type in response must be equal to "cat" and the length of response must be equal to 1|
 
 Testcase No10:
 | Step | Expected Result |
