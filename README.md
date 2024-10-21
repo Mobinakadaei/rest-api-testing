@@ -5,6 +5,8 @@ In this section, I describe the testing process for the API, which accepts two p
   * Animal Types: The API supports four specific animal types: cat, dog, horse, and snail. The API provides specific responses only for these animals.
   * Amount Field: The amount parameter has a maximum limit of 500.
 
+The JSON response was randomly generated, but two critical fields were essential for testing: the type field and the length of the JSON response body. To ensure the accuracy of the response, I implemented assertions for these two fields. This approach verifies that the type is correct and that the response body meets the expected length, ensuring the integrity of the API response.
+
 
 ## Testing Approach
 
