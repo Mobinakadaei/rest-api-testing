@@ -8,21 +8,21 @@ In this section, I describe the testing process for the API, which accepts two p
 
 ## Testing Approach
 
-1. Initial Tests:
+**1. Initial Tests:**
 
-  * I began by running test cases without sending any parameters and by sending parameters with null values to observe the API's behavior in these scenarios.
+  I began by running test cases without sending any parameters and by sending parameters with null values to observe the API's behavior in these scenarios.
 
-2. Invalid Animal Type:
+**2. Invalid Animal Type:**
 
-  * Next, I tested the API by sending an animal type that is not included in the list, such as "Lion", to evaluate how the API handles unexpected input.
+  Next, I tested the API by sending an animal type that is not included in the list, such as "Lion", to evaluate how the API handles unexpected input.
 
-3. Valid Animal Types:
+**3. Valid Animal Types:**
 
-  * I then sent requests for each of the valid animals to ensure the API returns the correct responses.
+  I then sent requests for each of the valid animals to ensure the API returns the correct responses.
 
-4. Amount Parameter Testing:
+**4. Amount Parameter Testing:**
 
-  * For the amount field, I tested the following boundary values:
+  For the amount field, I tested the following boundary values:
 
      * 0 (zero value)
      * 1 (minimum boundary value)
@@ -31,6 +31,17 @@ In this section, I describe the testing process for the API, which accepts two p
      * 504 (exceeding the maximum limit)
 
 Through these tests, I aimed to ensure that the API handles both valid and invalid inputs correctly and adheres to the specified parameter constraints.
+
+## Modularized Variables**
+
+To promote cleaner code and ensure better separation of concerns, I used a separate variables file to store all the common variables (e.g., endpoint, valid animal lists and some amounts for testing).
+
+## Running the Tests
+
+ To execute the tests, simply run the following command from the project root:
+  ```sh
+  pytest Rest_API_test.py
+  ```
 
 ## Test Cases
 
