@@ -24,15 +24,15 @@ In this section, I describe the testing process for the API, which accepts two p
 
   For the amount field, I tested the following boundary values:
 
-     * 0 (zero value)
-     * 1 (minimum boundary value)
-     * 5 (normal value)
-     * 500 (maximum value)
-     * 504 (exceeding the maximum limit)
+   * 0 (zero value)
+   * 1 (minimum boundary value)
+   * 5 (normal value)
+   * 500 (maximum value)
+   * 504 (exceeding the maximum limit)
 
 Through these tests, I aimed to ensure that the API handles both valid and invalid inputs correctly and adheres to the specified parameter constraints.
 
-## Modularized Variables**
+## Modularized Variables
 
 To promote cleaner code and ensure better separation of concerns, I used a separate variables file to store all the common variables (e.g., endpoint, valid animal lists and some amounts for testing).
 
