@@ -34,7 +34,7 @@ Through these tests, I aimed to ensure that the API handles both valid and inval
 
 ## Modularized Variables
 
-To promote cleaner code and ensure better separation of concerns, I used a separate variables file to store all the common variables (e.g., endpoint, valid animal lists and some amounts for testing).
+To enhance code readability and maintain a clear separation of concerns, I created a dedicated variables file, Rest_API_test_variable.py, to store common variables. This includes endpoints, valid animal lists, and other amounts used for testing purposes. This approach not only promotes cleaner code but also simplifies the process of updating and managing these values across the test suite.
 
 ## Running the Tests
 
